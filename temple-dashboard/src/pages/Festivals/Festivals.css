@@ -1,0 +1,36 @@
+.festivals-page {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.festival-list {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.festival-card {
+  background-color: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  text-align: left;
+}
+
+.festival-card h2 {
+  margin-bottom: 0.5rem;
+  color: #ffc107;
+}
+
+.festival-date {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.festival-description {
+  color: #ccc;
+}

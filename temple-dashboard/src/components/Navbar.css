@@ -1,0 +1,202 @@
+/* Base styles */
+.divine-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgb(40, 39, 39); /* Light spiritual theme */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Brand name styling */
+.nav-brand span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8e44ad; /* Spiritual purple */
+  font-family: 'Times New Roman', serif;
+}
+
+/* Navigation links styling */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #8e44ad;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #8e44ad;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Search bar styling */
+.nav-search {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s;
+  width: 200px;
+}
+
+.search-input:focus {
+  border-color: #8e44ad;
+  box-shadow: 0 0 5px rgba(142, 68, 173, 0.3);
+}
+
+.search-button {
+  background: none;
+  border: none;
+  margin-left: -35px;
+  cursor: pointer;
+  color: #8e44ad;
+}
+
+.search-button:hover {
+  color: #6c3483;
+}
+
+
+
+/* Search suggestions dropdown */
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.suggestion-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+  background-color: #f5f5f5;
+}
+
+.temple-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.temple-location {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Make search container relative for dropdown positioning */
+.nav-search {
+  position: relative;
+}
+
+
+
+
+
+
+/* Search container */
+.nav-search {
+  position: relative;
+  width: 250px;
+}
+
+/* Suggestions dropdown */
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 5px;
+}
+
+.suggestion-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+  background-color: #f8f3e6;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.temple-name {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 3px;
+}
+
+.temple-location {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.no-results {
+  padding: 10px 15px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Highlight matching text */
+.highlight {
+  background-color: #fffacd;
+  font-weight: bold;
+}
+
+
+
+
+

@@ -1,0 +1,20 @@
+.live-darshan-page {
+  padding: 2rem;
+  color: white;
+  background-color: #111;
+  min-height: 100vh;
+}
+
+.darshan-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.video-card {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
